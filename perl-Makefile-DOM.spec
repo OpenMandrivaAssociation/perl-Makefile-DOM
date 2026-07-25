@@ -1,15 +1,15 @@
 %define upstream_name    Makefile-DOM
-%define upstream_version 0.004
+%define upstream_version 0.008
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    Tokens representing ordinary white space
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Makefile/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://github.com/agentzh/makefile-dom-pm
+Source0:    https://cpan.metacpan.org/authors/id/A/AG/AGENT/Makefile-DOM-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Clone)
